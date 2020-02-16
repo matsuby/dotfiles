@@ -1,0 +1,15 @@
+[user]
+	name = matsuby
+	email = matsubygh@gmail.com
+[include]
+	path = gitalias/gitalias.txt
+[core]
+	excludesfile = ~/.gitignore
+	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	editor = vim
+	autocrlf = false
+	safecrlf = true
+[color]
+	ui = auto
+[fetch]
+	prune = true
