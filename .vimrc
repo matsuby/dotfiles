@@ -20,9 +20,10 @@ set ruler
 set cursorline
 let loaded_matchparen = 1
 
+syntax on
 set list
 set listchars=tab:»-,trail:-
-syntax on
+au FileType gitcommit syntax match gitcommitComment /^;.*/
 
 set backspace=indent,eol,start
 autocmd BufWritePre * :%s/\s\+$//ge
