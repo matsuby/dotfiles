@@ -1,8 +1,6 @@
 [user]
 	name = matsuby
 	email = matsubygh@gmail.com
-[include]
-	path = gitalias/gitalias.txt
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
@@ -14,3 +12,8 @@
 	ui = auto
 [fetch]
 	prune = true
+[include]
+	path = gitalias/gitalias.txt
+[alias]
+  ca = commit --amend --date=now
+
