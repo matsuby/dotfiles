@@ -21,5 +21,7 @@ fi
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-eval "$(hub alias -s)"
+if command -v hub >/dev/null; then
+  eval "$(hub alias -s)"
+fi
 
