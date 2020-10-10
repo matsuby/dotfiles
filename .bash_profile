@@ -2,5 +2,6 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export PATH=$PATH:./node_modules/.bin
+export PATH="./node_modules/.bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
