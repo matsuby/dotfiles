@@ -16,10 +16,8 @@ alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
-
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 if command -v hub >/dev/null; then
   eval "$(hub alias -s)"
